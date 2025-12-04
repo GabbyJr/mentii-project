@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --mentii-blue: #1D3557;
+  --mentii-mint: #4DD5C8;
+  --mentii-gray: #F5F5F5;
+  --mentii-purple: #7F5AF0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: #111827;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--mentii-blue) 0%, var(--mentii-purple) 100%);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: var(--mentii-gray);
+  color: var(--mentii-blue);
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-mint {
+  background-color: var(--mentii-mint);
+  color: var(--mentii-blue);
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-mint:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Style */
+.card {
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--mentii-gray);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background-color: var(--mentii-mint);
+  color: var(--mentii-blue);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.badge-verified {
+  display: inline-block;
+  background-color: var(--mentii-blue);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+/* Input Field */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--mentii-gray);
+  border: 2px solid var(--mentii-gray);
+  border-radius: 16px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--mentii-mint);
+  background-color: white;
+}
+
+.input-field::placeholder {
+  color: #9CA3AF;
+}
+
+/* Separator */
+.separator {
+  border-top: 1px solid var(--mentii-gray);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mentii-mint);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mentii-blue);
+}
